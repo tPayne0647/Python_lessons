@@ -2,8 +2,13 @@ import random
 
 name = input("What is your name?: ")
 question = input("What is your question?: ")
+
+while not question:
+    question = input("What is your question!?")
+    
 answer = ""
 random_number = random.randint(1, 9)
+
 
 if random_number == 1:
   answer = "Yes - definitely!"
@@ -35,7 +40,7 @@ else:
   print("Error!!!")
 
 
-print(""" 
+eight_ball = """ 
       ____
     ,dP9CGG88@b,
   ,IP  _   Y888@@b,
@@ -49,7 +54,19 @@ Y8GGGGGG8888888@@@@P.....
  `Y8888888@@@@@@@P'......
     `@@@@@@@@@P'.......
         '''''........                   
-      """)
-print(name + ' asks: ' +'"'   + question + '"')
+      """
+
+
+if question == "":
+    print(eight_ball)
+    print("No question asked...")
+    
+else:
+    if name == "":
+        print(eight_ball)
+        print(question)
+    else:
+        print(eight_ball)
+        print(name + " asks: " + '"' + question + '"')
 print("*******************************************************************************")
 print("Magic 8-Ball's answer: " + answer)
