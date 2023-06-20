@@ -12,7 +12,7 @@ while True:
         
         elif unit.upper() == "L":
             converted = weight * 0.45
-            print("Weight in Lbs: " + str(converted))
+            print("Weight in Kgs: " + str(converted))
             sys.exit()
             
         else:
