@@ -15,6 +15,9 @@ if random_number == 1:
 
 elif random_number == 2:
   answer = "It is decidedly so..."
+  
+  
+  
 
 elif random_number == 3:
   answer = "Without a doubt!"
@@ -70,3 +73,6 @@ else:
         print(name + " asks: " + '"' + question + '"')
 print("*******************************************************************************")
 print("Magic 8-Ball's answer: " + answer)
+
+
+
