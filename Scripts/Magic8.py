@@ -1,4 +1,5 @@
 import random
+from ascii_art import eight_ball
 
 name = input("What is your name?: ")
 question = input("What is your question?: ")
@@ -38,23 +39,6 @@ elif random_number == 9:
   answer = "Sorry " + name + ", Very doubtful..."
 else:
   print("Error!!!")
-
-
-eight_ball = """ 
-      ____
-    ,dP9CGG88@b,
-  ,IP  _   Y888@@b,
- dIi  (_)   G8888@b
-dCII  (_)   G8888@@b
-GCCIi     ,GG8888@@@
-GGCCCCCCCGGG88888@@@
-GGGGCCCGGGG88888@@@@...
-Y8GGGGGG8888888@@@@P.....
- Y88888888888@@@@@P......
- `Y8888888@@@@@@@P'......
-    `@@@@@@@@@P'.......
-        '''''........                   
-      """
 
 
 if question == "":
