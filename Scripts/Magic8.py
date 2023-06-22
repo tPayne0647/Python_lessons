@@ -1,5 +1,5 @@
 import random
-from ascii_art import eight_ball
+from Ascii_Art.magic_eight import eight_ball
 
 name = input("What is your name?: ")
 question = input("What is your question?: ")
