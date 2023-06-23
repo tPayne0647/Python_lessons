@@ -1,7 +1,3 @@
-"""
-This module provides examples of elegant loop constructs in Python.
-"""
-
 # Add 10 points to each grade and print resulting grades
 grades = [90, 88, 62, 76, 74, 89, 48, 57]
 scaled_grades = [grade + 10 for grade in grades]
