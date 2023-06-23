@@ -46,15 +46,13 @@ else:
 
 
 if question == "":
-    print(eight_ball)
     print("No question asked...")
     
 else:
     if name == "":
-        print(eight_ball)
         print(question)
     else:
-        print(eight_ball)
         print(name + " asks: " + '"' + question + '"')
+eight_ball()
 print("*******************************************************************************")
 print("Magic 8-Ball's answer: " + answer)
