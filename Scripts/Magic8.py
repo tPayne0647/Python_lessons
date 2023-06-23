@@ -1,5 +1,9 @@
+import sys
+sys.path.append('/home/tpayne/Python_lessons')
+
 import random
-from Ascii_Art.magic_eight import eight_ball
+from Ascii_art.magic_eight import eight_ball
+
 
 name = input("What is your name?: ")
 question = input("What is your question?: ")
