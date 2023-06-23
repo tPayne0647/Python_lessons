@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+      - id: black
+        language_version: python3
+  - repo: https://github.com/koalaman/shellcheck-precommit
+    rev: v0.9.0
+    hooks:
+      - id: shellcheck
+        # args: ["--severity=warning"]  # Optionally only show errors and warnings
+        ##
+        ## define exclude list for further pre-commit jobs
+        ## # git-crypt status | grep -v '^not' | sed -e 's/^.*: //g'
+        exclude: &ignore_files |
+          (?x)(
+            ^.helpers/id_grafana.key|
+            ^inventories/ndcloud-internal/group_vars/all/01_secrets.yml|
+            ^roles/_certbot/defaults/main/secrets.yml|
+            ^roles/download/defaults/main/secrets.yml|
+            ^roles/download/files/id_ed25519_git_deploy.key
+          )
