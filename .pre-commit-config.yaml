@@ -15,7 +15,7 @@ repos:
 
   - repo: local
     hooks:
-      - id: spellcheck
+      - id: codespell
         name: Spell Check
         entry: codespell
         language: en
