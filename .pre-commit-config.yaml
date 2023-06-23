@@ -13,13 +13,10 @@ repos:
         pass_filenames: false
         fail_fast: true
 
-  - repo: local
+  - repo: https://github.com/koalaman/shellcheck-precommit
+    rev: v0.9.0
     hooks:
-      - id: Spell Check
-        name: Spell Check
-        entry: codespell
-        language: en
-        types: [python, markdown]
+      - id: shellcheck
   
       
     repo: https://github.com/psf/black
