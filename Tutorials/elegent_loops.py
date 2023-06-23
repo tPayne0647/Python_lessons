@@ -4,10 +4,10 @@
 # print(scaled_grades)
 
 
-# # Double list of numbers and print out both lists using only 3 lines
-# numbers = [2,4,10,100,500,1000]
-# doubled = [i * 2 for i in numbers]
-# print(str(numbers) + "\n" + str(doubled))
+# Double list of numbers and print out both lists using only 3 lines
+numbers = [2,4,10,100,500,1000]
+doubled = [i * 2 for i in numbers]
+print(str(numbers) + "\n" + str(doubled))
 
 
 
