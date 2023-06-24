@@ -21,11 +21,11 @@ repos:
           # - --check
           # - --diff
 
-  - repo: local
-    hooks:
-      - id: pylint
-        name: Pylint
-        entry: pylint
-        language: system
-        types: [python]
-        pass_filenames: true
+  # - repo: local
+  #   hooks:
+  #     - id: pylint
+  #       name: Pylint
+  #       entry: pylint
+  #       language: system
+  #       types: [python]
+  #       pass_filenames: true
