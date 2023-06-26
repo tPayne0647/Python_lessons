@@ -5,5 +5,5 @@ for locations in sales_data:
     print(locations)
     for i in locations:
         total_sales += i
-        
+
 print(total_sales)

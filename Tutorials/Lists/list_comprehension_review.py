@@ -8,26 +8,26 @@ total_price = 0
 
 # Get sum of all prices
 for price in prices:
-  total_price += price 
+    total_price += price
 
 # Get and print average price
 average_price = total_price / len(prices)
 print("Average Haircut Price: " + str(average_price))
 
 # Subtract each price by 5 and print new prices
-new_prices = [i-5 for i in prices]
+new_prices = [i - 5 for i in prices]
 print("New Prices: " + str(new_prices))
 
 # Get total revenue from last week sales
 total_revenue = 0
 
 for i in range(len(hairstyles)):
-  total_revenue += prices[i] * last_week[i]
+    total_revenue += prices[i] * last_week[i]
 print("Total Revenue: " + str(total_revenue))
 
 # Get and print average daily revenue
 average_daily_revenue = total_revenue / 7
-print("Average Daily Revenue: "+ str(average_daily_revenue))
+print("Average Daily Revenue: " + str(average_daily_revenue))
 
 
 # Find all cuts under 30 and print their names from hairstyles
