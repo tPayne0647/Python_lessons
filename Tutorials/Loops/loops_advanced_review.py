@@ -113,3 +113,16 @@ def same_values(lst1, lst2):
 
 
 print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
+
+
+# Return True is list 2 is same as reversed list 1, else return false
+def reversed_list(lst1, lst2):
+    for index in range(len(lst1)):
+        if lst1[index] != lst2[len(lst2) - 1 - index]:
+            return False
+    return True
+
+
+# Uncomment the lines below when your function is done
+print(reversed_list([1, 2, 3], [3, 2, 1]))
+print(reversed_list([1, 5, 3], [3, 2, 1]))
