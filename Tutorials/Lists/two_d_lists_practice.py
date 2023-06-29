@@ -1,4 +1,9 @@
-customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+customer_data = [
+    ["Ainsley", "Small", True],
+    ["Ben", "Large", False],
+    ["Chani", "Medium", True],
+    ["Depak", "Medium", False],
+]
 print(customer_data)
 
 # change chani to false

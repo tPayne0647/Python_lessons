@@ -2,7 +2,7 @@ data_science_topics = ["Machine Learning", "SQL", "Pandas", "Algorithms", "Stati
 print(data_science_topics)
 
 
-# Remove last item on list: 
+# Remove last item on list:
 data_science_topics.pop()
 print(data_science_topics)
 
