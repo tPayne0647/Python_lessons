@@ -11,7 +11,7 @@ def caesar_decode(message, offset):
             translated_message += translated_character
         else:
             translated_message += character
-    return translated_message
+    return "Decoded message: " + translated_message
 
 
 def crypt_this(message, offset):
@@ -24,17 +24,26 @@ def crypt_this(message, offset):
             translated_message += translated_character
         else:
             translated_message += character
-    print(translated_message)
+    return "Encrypted message: " + translated_message
 
 
-# print(caesar_decode("xuo jxuhu! jxyi yi qd unqcfbu ev q squiqh syfxuh. muhu oek qrbu je tusetu yj? y xefu ie! iudt cu q cuiiqwu rqsa myjx jxu iqcu evviuj!", 10))
+print(
+    caesar_decode(
+        "xuo jxuhu! jxyi yi qd unqcfbu ev q squiqh syfxuh. muhu oek qrbu je tusetu yj? y xefu ie! iudt cu q cuiiqwu rqsa myjx jxu iqcu evviuj!",
+        10,
+    )
+)
 
-# print(crypt_this("Hey, my name is Tristan. This is a secret message. Can you read it?!", 10))
+print(crypt_this("Hey, my name is Tristan. This is a secret message. Can you read it?!", 10))
 
-# print(caesar_decode("Huo, co dqcu yi Thyijqd. Txyi yi q iushuj cuiiqwu. Cqd oek huqt yj?!", 10))
+print(caesar_decode("Huo, co dqcu yi Thyijqd. Txyi yi q iushuj cuiiqwu. Cqd oek huqt yj?!", 10))
 
-# print(caesar_decode("jxu evviuj veh jxu iusedt cuiiqwu yi vekhjuud.", 10))
-# print(caesar_decode("bqdradyuzs ygxfubxq omqemd oubtqde fa oapq kagd yqeemsqe ue qhqz yadq eqogdq!", 14))
+print(caesar_decode("jxu evviuj veh jxu iusedt cuiiqwu yi vekhjuud.", 10))
+print(
+    caesar_decode(
+        "bqdradyuzs ygxfubxq omqemd oubtqde fa oapq kagd yqeemsqe ue qhqz yadq eqogdq!", 14
+    )
+)
 
 
 # BruteForcer
@@ -44,7 +53,6 @@ def brute_forcer(message, max_offset):
         print(f"Offset {offset}: {decoded_message}")
 
 
-brute_forcer(
-    "vhfinmxkl atox kxgwxkxw tee hy maxlx hew vbiaxkl hulhexmx. px'ee atox mh kxteer lmxi ni hnk ztfx by px ptgm mh dxxi hnk fxlltzxl ltyx.",
-    20,
-)
+# brute_forcer(
+#     "vhfinmxkl atox kxgwxkxw tee hy maxlx hew vbiaxkl hulhexmx. px'ee atox mh kxteer lmxi ni hnk ztfx by px ptgm mh dxxi hnk fxlltzxl ltyx.",
+#     20,)
