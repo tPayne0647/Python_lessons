@@ -48,10 +48,10 @@ selected_site = user_site_selection()
 
 # Get total number and name of devices in selected site, then prints them
 def get_device_count():
-    api_url_devices = "https://demo.nautobot.com/api/dcim/devices/"
+    devices_url = "https://demo.nautobot.com/api/dcim/devices/"
     test_parameters = {"site": selected_site}
     device_data = requests.get(
-        api_url_devices,
+        devices_url,
         headers=headers,
         params=test_parameters,
     )
