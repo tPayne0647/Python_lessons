@@ -35,10 +35,17 @@ all_sites = get_sites()
 def user_site_selection():
     while True:
         ask_site = input("Please select a site: ")
-        selected_site = ask_site.upper()
+        if len(ask_site) <= 5:
+            selected_site = ask_site.upper()
+        else:
+            selected_site = ask_site.title()
+
         if selected_site in all_sites:
             print("******************************************")
-            return selected_site.lower()
+            if len(selected_site) <= 5:
+                return selected_site.lower()
+            else:
+                return selected_site.title()
         else:
             print("Name misspelled, please try again:  ")
 
